@@ -1,0 +1,217 @@
+/* ОБЩИЕ НАСТРОЙКИ */
+body {
+    background-color: #000000; /* Глубокий черный */
+    color: #ffffff;           /* Чистый белый */
+    font-family: 'Courier New', Courier, monospace; /* Шрифт терминала */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-transform: uppercase; /* Все буквы заглавные для строгости */
+}
+
+/* ШАПКА САЙТА */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.main-logo {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    transition: 0.3s;
+}
+
+.main-logo:hover {
+    filter: invert(1); /* Логотип инвертируется при наведении */
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 10px;
+    margin: 20px 0 5px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 0.8em;
+    color: #888;
+    letter-spacing: 3px;
+}
+
+/* ОСНОВНОЙ КОНТЕНТ */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section {
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-left: 5px solid #fff;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* ИСТОРИЯ */
+.history-content p {
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #222;
+}
+
+/* БЛОК АВТОРА */
+.author-zone {
+    background: #050505;
+    padding: 30px;
+    border: 1px double #333;
+    text-align: center;
+}
+
+.litres-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+
+.litres-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* ГАЛЕРЕЯ */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-card {
+    width: 300px;
+    border: 1px solid #333;
+    background: #0a0a0a;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.photo-card:hover {
+    border-color: #fff;
+    transform: translateY(-5px);
+}
+
+.photo-card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(120%); /* Эффект Ч/Б */
+    transition: 0.3s;
+}
+
+.photo-card:hover img {
+    filter: grayscale(100%) contrast(100%) brightness(1.2);
+}
+
+.photo-card p {
+    font-size: 0.7em;
+    margin: 10px 0;
+    color: #888;
+}
+
+/* УСТАВ */
+.rules-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rules-list li {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #111;
+    display: flex;
+    align-items: center;
+}
+
+.rules-list li span {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    padding: 2px 8px;
+    margin-right: 20px;
+    font-size: 0.8em;
+}
+
+.rules-list li:hover {
+    background: #0a0a0a;
+}
+
+/* КНОПКА ВСТУПЛЕНИЯ */
+.cta-zone {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.join-btn {
+    padding: 25px 50px;
+    font-size: 1.2em;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* ПОДВАЛ (FOOTER) */
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid #333;
+    background: #050505;
+}
+
+footer p {
+    font-size: 0.7em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.yt-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.yt-link:hover {
+    background: #ff0000; /* Фирменный красный YouTube */
+    border-color: #ff0000;
+}
+
+/* АДАПТИВНОСТЬ (ДЛЯ МОБИЛОК) */
+@media (max-width: 600px) {
+    h1 { font-size: 1.8em; }
+    .photo-card { width: 100%; }
+    .join-btn { font-size: 0.9em; padding: 15px 25px; }
+}
